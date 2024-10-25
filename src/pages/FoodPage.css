@@ -1,0 +1,179 @@
+.food-page{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+.food-page-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.food-page-left img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.food-page-right{
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 3;
+    padding-left: 60px;
+}
+
+.food-page-right button{
+    margin: 7px 0;
+    width: 280px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.skeleton {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .skeleton-image {
+    width: 100%;
+    height: 300px;
+    background-color: var(--loading-grey);
+    background: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 60%
+    ) var(--loading-grey);
+    background-size: 200% 100%;
+    background-position-x: 180%;
+    animation: 1s loading ease-in-out infinite;
+  }
+  
+  .skeleton-title {
+    width: 60%;
+    height: 30px;
+    background-color: var(--loading-grey);
+    background: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 60%
+    ) var(--loading-grey);
+    background-size: 200% 100%;
+    background-position-x: 180%;
+    animation: 1s loading ease-in-out infinite;
+  }
+  
+  .skeleton-text {
+    width: 80%;
+    height: 20px;
+    background-color: var(--loading-grey);
+    background: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 60%
+    ) var(--loading-grey);
+    background-size: 200% 100%;
+    background-position-x: 180%;
+    animation: 1s loading ease-in-out infinite;
+  }
+  
+  .skeleton-button {
+    width: 280px;
+    height: 40px;
+    background-color: var(--loading-grey);
+    background: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 60%
+    ) var(--loading-grey);
+    background-size: 200% 100%;
+    background-position-x: 180%;
+    animation: 1s loading ease-in-out infinite;
+  }
+
+@media (max-width: 968px) {
+    
+    .food-page{
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    
+    .food-page-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .food-page-left img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .food-page-right{
+        padding: 0;
+        padding-top: 20px;
+        align-items: left;
+        justify-content: flex-start;
+    }
+    
+    .food-page-right h1{
+        font-size: 24px;
+    }
+
+    .food-page-right p{
+        font-size: 14px;
+    }
+    
+    .food-page-right button{
+        padding: 8px 15px;
+    }
+
+    .skeleton-image {
+      height: 310px;
+      width: 100%; 
+    }
+  
+    .skeleton-title {
+      height: 24px;
+    }
+  
+    .skeleton-text {
+      height: 16px;
+    }
+  
+    .skeleton-button {
+      height: 36px;
+    }
+  }
+  
+
+  @keyframes loading {
+    to {
+        background-position-x: -20%;
+    }
+  }
+  
+  
+  @keyframes loading {
+    to {
+        background-position-x: -20%;
+    }
+  }
